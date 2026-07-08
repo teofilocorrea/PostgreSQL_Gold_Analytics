@@ -52,7 +52,7 @@ gold.dim_tiempo
 
 ## 🧱 Estructura del proyecto
 
-
+```
 PostgreSQL_Gold_Analytics/
 │
 ├── asset/
