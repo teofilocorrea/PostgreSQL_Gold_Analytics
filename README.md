@@ -23,7 +23,7 @@ Cierra el ciclo completo de una plataforma de datos:
 ---
 
 ## 🏗️ Contexto — Análisis sobre Gold
-
+```
 Arquitectura Medallion
 │
 ├── STG     ← datos crudos
@@ -34,11 +34,12 @@ Arquitectura Medallion
 Todas las consultas se ejecutan sobre `gold.fact_ventas` y sus
 dimensiones. Gracias al modelo Star Schema, cada análisis requiere
 JOINs simples entre la fact table y una dimensión.
+```
 
 ---
 
 ## 🌟 Modelo analizado
-
+```
             gold.dim_clientes
                      │
 gold.dim_productos ──┼── gold.dim_empleados
@@ -46,10 +47,11 @@ gold.dim_productos ──┼── gold.dim_empleados
 gold.fact_ventas
 │
 gold.dim_tiempo
-
+```
 ---
 
 ## 🧱 Estructura del proyecto
+
 
 PostgreSQL_Gold_Analytics/
 │
@@ -81,7 +83,7 @@ PostgreSQL_Gold_Analytics/
 │
 ├── .gitignore
 └── README.md
-
+```
 ---
 
 ## 📊 Consultas por categoría
